@@ -1,0 +1,5 @@
+requests>=2.25
+beautifulsoup4>=4.9
+gspread>=6.1.0
+google-auth>=2.0.0
+pandas>=2.0.0
