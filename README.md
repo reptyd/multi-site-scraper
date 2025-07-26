@@ -38,6 +38,7 @@ python main.py
 
 After execution the script writes `jobs.csv` with all collected rows.  If the `--to-sheets` flag is provided and `GOOGLE_APPLICATION_CREDENTIALS` is set, the data is also appended to the specified Google Sheets document.
 
+
 ## Example
 
 A sample output file `data/example_jobs.csv` is included to illustrate the format:
@@ -48,20 +49,6 @@ A sample output file `data/example_jobs.csv` is included to illustrate the forma
 | https://example-site2.com/careers  | Data Analyst        | DataCo          | Göteborg    |
 | https://example-site3.com/vacancies| Full‑Stack Engineer | Future Solutions| Malmö       |
 
-## Demonstration idea (≤2 min)
-
-1. Record a Loom video showing how you adjust the `sites` list and CSS selectors in `main.py` for three demo pages.
-2. Run the script and display the console output while it fetches data.
-3. Open the generated CSV and Google Sheet (if enabled) to show the aggregated results.
-4. Highlight that adding a new site requires only a URL and that the parser logic is shared.
-
-## Possible extensions for a client
-
-* **Pagination support** – iterate through multiple pages on each site.
-* **Playwright integration** – scrape dynamic pages that require JavaScript rendering.
-* **Flexible fields** – allow the user to specify which fields to extract via a configuration file.
-* **Database storage** – write results to a relational database (SQLite, PostgreSQL) instead of CSV.
-* **Scheduling** – run the scraper periodically (e.g. daily) and append new postings to Google Sheets.
 
 ## Google Sheets API note
 
